@@ -559,17 +559,12 @@ margin-bottom: 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         cursor: pointer;
+        font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.06em;
         color: var(--white);
     }
-.registration-form{
-    width: 500px;
-    height: 528px;
-    margin: 0 auto;
-    padding-top: 40px;
-}
 .caption-modal{
     font-weight: 700;
     font-size: 20px;
@@ -581,7 +576,9 @@ margin-bottom: 0;
 }
 .form-icon{
     position: absolute;
-    margin-left: 15px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     fill: currentColor;
     transition: fill var(--anim);
 }
@@ -615,17 +612,17 @@ margin-bottom: 0;
 .form-field{
     margin-top: 10px;
 }
-.form-field:first-child{
+.form-field:first-of-type{
     margin-top: 12px;
 }
 .container-form-icon{
-display: flex;
-align-items: center;
+position: relative;
 }
 .icon-close{
     width: 11px;
     height: 11px;
-    fill:  #000000;
+    fill:  currentColor;
+    transition: color var(--anim);
 }
 .modal-button{
     display: flex;
@@ -636,10 +633,14 @@ align-items: center;
     right: 8px;
     width: 30px;
     height: 30px;
+    color: #000000;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+}
+.modal-button:hover{
+    color: var(--blue);
 }
 .modal{
     position: absolute;
@@ -647,7 +648,7 @@ align-items: center;
     left: 50%;
     transform: translate( -50%, -50%);
     width: 528px;
-    height: 581px;
+    padding: 40px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
