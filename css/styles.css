@@ -41,14 +41,14 @@ img{
     height: 80px;
     border: 1px solid #ECECEC;
 }
-.webstudioheader{
+.header__webstudioheader{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
     color: black;
     text-decoration: none;
 }
-.header-transition{
+.header__transition{
     position: relative;
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -57,7 +57,7 @@ img{
     color: var(--col);
     transition: color var(--anim);
 }
-.header-transition::after{
+.header__transition::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -71,21 +71,21 @@ img{
     opacity: 0;
     transition: opacity var(--anim);
 }
-.header-transition.current::after{
+.header__transition.current::after{
     opacity: 1;
 }
-.header-transition:hover::after,
-.header-transition:focus::after{
+.header__transition:hover::after,
+.header__transition:focus::after{
     opacity: 1;
 }
 .current{
     color: var(--header-ul);
 }
-.header-transition:hover,
-.header-transition:focus{
+.header__transition:hover,
+.header__transition:focus{
     color: var(--header-ul);
 }
-.mailtel{
+.header__mailtel{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -96,18 +96,18 @@ img{
     color: currentColor;
     transition: color var(--anim);
 }
-.mailtel:hover,
-.mailtel:focus{
+.header__mailtel:hover,
+.header__mailtel:focus{
     color: var(--blue);
 }
-.list-icon-hover{
+.header__mailtel-hover{
     display: flex;
     gap: 10px;
     align-items: center;
     color: var(--grey);
 }
 
-.mail-list{
+.header__mail-list{
     display: flex;
     gap: 50px;
     margin-left: auto;
@@ -118,33 +118,33 @@ img{
     padding-left: 15px;
     padding-right: 15px;
 }
-.container-header{
+.header__container{
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.studio-list{
+.header__studio-list{
     display: flex;
     gap: 50px;
 }
-.navigation{
+.header__navigation{
     flex: 1;
     margin-left: 93px;
 }
 /* SVG */
-.phone{
+.header__phone{
     width: 10px;
     height: 16px;
     fill: currentColor;
 }
-.folder{
+.header__folder{
     width: 16px;
     height: 12px;
     fill: currentColor;
     
 }
-.container-icon-goals{
+.goals__container-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,16 +155,16 @@ img{
     margin-bottom: 30px;
     
 }
-.icon-goals{
+.goals__icon{
     width: 70px;
     height: 70px;
 }
-.social-network{
+.team__svg{
     width: 20px;
     height: 20px;
     fill: currentColor;
 }
-.circle{
+.team__circle{
     display: flex;
     color: #AFB1B8;
     justify-content: center;
@@ -175,18 +175,18 @@ img{
     transition: background-color var(--anim), color var(--anim);
 
 }
-.circle:hover,
-.circle:focus{
+.team__circle:hover,
+.team__circle:focus{
     background-color: #2196F3;
     color: #FFFFFF;
 }
-.container-social-network{
+.team__social-network{
     display: flex;
     justify-content: center;
     margin-top: 15px;
     gap: 10px;
 }
-.circle-footer{
+.team__circle-footer{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .social-network-footer{
@@ -200,7 +200,7 @@ img{
 /* BUTTON */
 
 /* Main */
-.main-title{
+.general__title{
     width: 696px;
     margin: 0 auto;
     font-size: 44px;
@@ -211,7 +211,7 @@ img{
     line-height: 1.36;
     color: var(--white);
 }
-.conteiner-general{
+.general{
     margin: 0 auto;
     max-width: 1600px;
     padding: 200px 0;
@@ -219,7 +219,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.button-index{
+.general__button{
     display: block;
     margin: 0 auto;
     margin-top: 30px;
@@ -237,54 +237,54 @@ img{
     cursor: pointer;
     transition: background-color var(--anim);
 }
-.button-index:hover,
-.button-index:focus{
+.general__button:hover,
+.general__button:focus{
     background-color: #188CE8;
 }
-.goals-flex{
+.goals__flex{
     display: flex;
     justify-content: space-between;
 
 }
-.lists-goals{
+.goals__lists{
     max-width: 270px;
 }
-.goals-description{
+.goals__description{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1.14;
     font-size: 14px;
 }
-.goals-text{
+.goals__text{
     margin-top: 10px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
 }
-.conteiner-goals{
+.goals{
 padding-bottom: 0;
 }
 /* Container-page */
-.conteiner-page{
+.page{
     font-size: 36px;
     line-height: 1.17;  
 }
-.pageteams {
+.team__image {
     font-size: 36px;
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.17;
 }
-.page-flex{
+.page__flex{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.bottom-background-image{
+.page__image{
     position: relative;
 }
-.wrapper{
+.page__wrapper{
     position: absolute;
     width: 100%;
     height: 70px;
@@ -294,7 +294,7 @@ padding-bottom: 0;
     justify-content: center;
     background-color: rgba(47, 48, 58, 0.8);
 }
-.text-page-studio{
+.page__bottom-text-image{
     font-weight: 700;
     color: var(--white);
     font-size: 14px;
@@ -303,17 +303,17 @@ padding-bottom: 0;
     text-transform: uppercase;
     text-align: center;
 }
-/* Conteiner-team */
-.conteiner-team{
+/* team */
+.team{
     background-color: #F5F4FA;
 }
-.team-name{
+.team__name{
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.19;
 }
-.team-profession{
+.team__profession{
     margin-top: 10px;
     font-size: 16px;
     text-align: center;
@@ -321,40 +321,40 @@ padding-bottom: 0;
     line-height: 1.19;
     color: var(--grey);      
 }
-.lists-people{
+.team__lists-people{
     max-width: 270px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-flex{
+.team__flex{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
-.name-profession{
+.team__name-profession{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/* Container-client */
-.client{
+/* client__container */
+.client__text{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--col);
 }
-.container-client{
+.client__container{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.company-client{
+.client__company{
     width: 106px;
     height: 60px;
     fill: currentColor;
 }
-.color-company{
+.client__color-company{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,8 +365,8 @@ padding-bottom: 0;
     border-radius: 4px;
     transition: color var(--anim), border-color var(--anim);
 }
-.color-company:hover,
-.color-company:focus{
+.client__color-company:hover,
+.client__color-company:focus{
     color: var(--header-ul);
     border-color: var(--header-ul);
 }
@@ -408,7 +408,7 @@ padding-bottom: 0;
 .footer-adress__lists:not(:last-child){
     margin-bottom: 9px;
 }
-.footer .mailtel{
+.footer .header__mailtel{
     font-size: 14px;
     line-height: 1.71;
 }
